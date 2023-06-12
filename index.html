@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD CONTACTOS</title>
+    <link rel="shortcut icon" href="assets/img/cecytem.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body onload="checarSesion();">
+    <div class="container">
+        <div class="text-center">
+            <img src="assets/img/cecytem.png" class="mt-5" width="150px" alt="">
+            <h3 class="mt-2">LOGIN SISTEMA</h3>
+            <form id="formIniciar">
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">                    
+                  </div>
+                  <div class="mb-3">
+                    <input type="button" class="btn btn-danger form-control" onclick="loginUsuario()" value="Iniciar Sesion">
+                  </div>
+                  <div class="mb-3">
+                    <a href="registrar.html" class="btn btn-primary form-control">Crear Cuenta</a>
+                  </div>
+            </form>
+        </div>
+    </div>    
+    <script src="assets/js/funciones.js"></script>
+    <script src="assets/js/appLogin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.18/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
